@@ -2,7 +2,6 @@
 
 Move .vimrc to a .vim folder
 
-
     mv .vimrc ~/.vim/vimrc
 
 Create symlinks:
@@ -18,7 +17,6 @@ Make folder for Pathogen and download Pathogen
     mkdir -p ~/.vim/autoload ~/.vim/bundle 
     curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
-
 There are a couple of lines that you should add to your .vimrc file to activate pathogen.
 
     execute pathogen#infect()
@@ -33,4 +31,12 @@ Example to install nerd tree.
 All cool plugins can be found in Vimawesome.com
 
 
-# To isntall this vim environment in different machine
+# To install this vim environment in different machine
+
+    cd ~
+    git clone http://github.com/username/dotvim.git ~/.vim
+    ln -s ~/.vim/vimrc ~/.vimrc
+    ln -s ~/.vim/gvimrc ~/.gvimrc
+    cd ~/.vim
+    git submodule init
+    git submodule update
