@@ -1,4 +1,7 @@
+# To remake this
+
 Move .vimrc to a .vim folder
+
 
     mv .vimrc ~/.vim/vimrc
 
@@ -18,13 +21,16 @@ Make folder for Pathogen and download Pathogen
 
 There are a couple of lines that you should add to your .vimrc file to activate pathogen.
 
-	call pathogen#runtime_append_all_bundles()
-	call pathogen#helptags()
+    execute pathogen#infect()
+
+To install a new plugin, it is good to keep them in git submodules:
+Example to install nerd tree. 
+
+    submodule add https://github.com/scrooloose/nerdtree bundle/nerdtree
+    git add .
+    git commit -m "Install Fugitive.vim bundle as a submodule."()
+
+All cool plugins can be found in Vimawesome.com
 
 
-    git submodule init
-    git submodule update
-
-
-
-Instruction as found in http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
+# To isntall this vim environment in different machine
