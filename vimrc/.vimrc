@@ -35,6 +35,9 @@ set cursorline      " highlight current line
 set wildmenu        " visual autocomplete for command menu
 set showmatch       " highlight [{()}]
 
+" Folding methods
+
+
 "Searching
 
 set incsearch       " search as characters are entered
