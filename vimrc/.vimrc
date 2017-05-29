@@ -44,7 +44,8 @@ set incsearch       " search as characters are entered
 set hlsearch        " highlight matches
 
 " Custom mappings
-inoremap jk <esc>   " jk is escape
+" jk is escape!
+inoremap jk <esc>   
 
 "------------------------------------------------------------
 
@@ -72,7 +73,16 @@ let g:ctrlp_match_window = 'bottom,order:ttb'       " matching file top to botto
 let g:ctrlp_switch_buffer = 0                       " always open files in new buffer
 let g:ctrlp_working_path_mode = 0                   " allows change working directory and ctrlp respects that
 
-"--------------------------------------------------------------
+" Markdown Syntax
+let g:vim_markdown_folding_level = 6        " header folding level, defaul is 1
+let g:vim_markdown_frontmatter = 1          " Highlight YAML frontmatter as used by Jekyll
+let g:vim_markdown_math = 1                 " LaTeX math
+
+" Instant-Markdown-vim
+"let g:instant_markdown_slow = 1             " update preview not too fast
+let g:instant_markdown_autostart = 0        " do not autostart browser when opening a .md file
+
+""--------------------------------------------------------------
 
 " TMUX - allows cursor change in tmux mode
     " These lines change the cursor from block cursor mode to vertical bar cursor mode when using tmux. 

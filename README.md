@@ -4,7 +4,7 @@ Move .vimrc to a .vim folder
 
     mv .vimrc ~/.vim/vimrc
 
-Create symlinks:
+Create symbolic links:
 
     ln -s ~/.vim/vimrc/.vimrc ~/.vimrc
 
