@@ -7,9 +7,11 @@ execute pathogen#helptags()
 
 set t_Co=256  "enable 256 colors in vim, put before setting colorscheme
 
-colorscheme Tomorrow-Night-Eighties     "nice gray-dark theme
+" Some good colorschemes
+"colorscheme Tomorrow-Night-Eighties     "nice gray-dark theme
 "colorscheme badwolf      	"nice dark theme, with popout reds
 "colorscheme molokai        "nice dark theme, with alien green
+colorscheme mayansmoke      " nice light-blue coloscheme
 
 "------------------------------------------------------------
 "  
