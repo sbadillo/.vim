@@ -49,6 +49,10 @@ set hlsearch        " highlight matches
 " jk is escape!
 inoremap jk <esc>   
 
+" turn of search highlight until next search
+nnoremap <esc><esc> :silent! nohls<cr>
+
+
 "------------------------------------------------------------
 
 " Plugins 
@@ -83,6 +87,9 @@ let g:vim_markdown_math = 1                 " LaTeX math
 " Instant-Markdown-vim
 "let g:instant_markdown_slow = 1             " update preview not too fast
 let g:instant_markdown_autostart = 0        " do not autostart browser when opening a .md file
+
+" vim-airline
+set laststatus=2    "fixes: vim-airline doesn't appear until I create new split
 
 ""--------------------------------------------------------------
 
